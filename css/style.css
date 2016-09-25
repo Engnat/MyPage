@@ -22,3 +22,10 @@ nav ul li{
   padding: 3% 2%;
   color: #b1bad0;
 }
+
+[data-contenido-pagina="cotenedor"]{
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
