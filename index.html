@@ -7,7 +7,25 @@
 
   <link rel="stylesheet" href="css/style.css">
   <title>Engnat Page</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script>
+	    $(document).ready(function() {
+		    $('a[href^="#"]').on('click', function(event) {
+
+		    var target = $(this.getAttribute('href'));
+		    if( target.length ) {
+		        event.preventDefault();
+		        $('html, body').stop().animate({
+		            scrollTop: target.offset().top
+		        }, 1000);
+		    }
+		});
+   });
+  </script>
+
 </head>
+
 <body>
   <header>
     <nav>
@@ -69,7 +87,7 @@
 
     <section id="contenedor2">
       <section data-contenido="cuadros">
-
+        <h1>EXPERIENCIA</h1>
         <div class="cuadro img_cuadro1"><p>Texto1</p></div>
         <div class="cuadro img_cuadro2"><p>Texto2</p></div>
         <div class="cuadro img_cuadro3"><p>Texto3</p></div>
@@ -81,6 +99,8 @@
     </section>
 
     <section id="contenedor3">
+
+      <h1>PUBLICACIONES</h1>
       <section data-contenido="cuadro_contenedor3">
 
         <div class="cuadro_contenedor3">
@@ -123,7 +143,14 @@
     </section>
 
     <section id="contenedor4">
-
+      <section data-contenido="icono_contacto">
+        <img src="img/contacto.png" alt="Icono contacto">
+      </section>
+      <section data-contenido="informacion_contacto">
+        <p>Correo electronico:<a href="mailto:engnatruve@gmail.com" target="_blank"> engnatruve@gmail.com</a></p>
+        <hr>
+        <p>Behance: <a href="https://www.behance.net/Engnat" target="_blank">Engnat</a></p>
+      </section>
     </section>
 
   </section>

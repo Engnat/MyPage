@@ -306,7 +306,7 @@ img[src="img/equipo.png"]{
   clear: both;
   width: 60%;
   margin: 0 auto;
-  padding-top: 9%;
+  padding-top: 3%;
 }
 
 .cuadro{
@@ -328,10 +328,25 @@ img[src="img/equipo.png"]{
   text-align: center;
 }
 
+#contenedor2 h1{
+  color: #fff;
+  font-size: 27px;
+  border-bottom: 1px solid #fff;
+}
+
+
 #contenedor3{
   display: block;
   height: 100vh;
   background: #e8e8e8;
+}
+
+#contenedor3 h1{
+  font-family: sans-serif;
+  font-size: 33px;
+  margin: 0 auto;
+  width: 21%;
+  padding-top: 5%;
 }
 
 [data-contenido="cuadro_contenedor3"]{
@@ -340,7 +355,7 @@ img[src="img/equipo.png"]{
   clear: both;
   width: 100%;
   margin: 0 auto;
-  padding-top: 19.2%;
+  padding-top: 11.5%;
 }
 
 .cuadro_contenedor3{
@@ -405,4 +420,19 @@ img[src="img/equipo.png"]{
   display: block;
   height: 100vh;
   background: #2e3a4a;
+}
+
+[data-contenido="icono_contacto"]{
+  width: 9%;
+  margin: 0 auto;
+  padding-top: 10%;
+  border-bottom: 2px solid #fff;
+}
+
+[data-contenido="informacion_contacto"]{
+  width: 28%;
+  display: block;
+  margin: 5% auto;
+  color: #fff;
+  text-align: center;
 }
